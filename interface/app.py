@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from transformations import wgs84_to_lest97, lest97_to_wgs84
+from converter.transformations import wgs84_to_lest97, lest97_to_wgs84
 
 app = Flask(__name__, template_folder='templates')
 
