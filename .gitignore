@@ -1,3 +1,0 @@
-# Ignore distribution and egg-info folders
-dist/
-*.egg-info/

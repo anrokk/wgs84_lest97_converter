@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koordinaatide konverteerija</title>
+</head>
+<body>
+    <h2>Koordinaatide konverteerija</h2>
+    <form method="post">
+        <p>Esimene koordinaat (laius või X):</p>
+        <input type="text" name="coord1" required>
+        <br>
+        <p>Teine koordinaat (pikkus või Y):</p>
+        <input type="text" name="coord2" required>
+        <br>
+        <p>Vali suund:</p>
+        <select name="conversion_type">
+            <option value="wgs84_to_lest97">WGS84 → L-Est97</option>
+            <option value="lest97_to_wgs84">L-Est97 → WGS84</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">Konverteeri</button>
+    </form>
+
+    {% if result %}
+        <h3>Tulemus:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
