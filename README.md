@@ -11,7 +11,7 @@ This project provides a coordinate conversion tool between **WGS84** and **L-Est
 
 2. Install the package from Test PyPI:
     ```bash
-    pip install --index-url https://test.pypi.org/simple/ transformations-anrokk2004==0.2
+    pip install -i https://test.pypi.org/simple/ transformations-anrokk2004
     ```
    
 ## Usage
